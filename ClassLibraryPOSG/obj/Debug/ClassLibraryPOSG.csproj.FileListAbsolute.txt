@@ -1,0 +1,5 @@
+C:\Users\galla\Documents\Visual Studio 2015\Projects\ClassLibraryPOSG\ClassLibraryPOSG\bin\Debug\ClassLibraryPOSG.dll
+C:\Users\galla\Documents\Visual Studio 2015\Projects\ClassLibraryPOSG\ClassLibraryPOSG\bin\Debug\ClassLibraryPOSG.pdb
+C:\Users\galla\Documents\Visual Studio 2015\Projects\ClassLibraryPOSG\ClassLibraryPOSG\obj\Debug\ClassLibraryPOSG.csprojResolveAssemblyReference.cache
+C:\Users\galla\Documents\Visual Studio 2015\Projects\ClassLibraryPOSG\ClassLibraryPOSG\obj\Debug\ClassLibraryPOSG.dll
+C:\Users\galla\Documents\Visual Studio 2015\Projects\ClassLibraryPOSG\ClassLibraryPOSG\obj\Debug\ClassLibraryPOSG.pdb

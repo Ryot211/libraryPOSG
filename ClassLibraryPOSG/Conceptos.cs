@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Configuration;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -18,11 +15,8 @@ namespace ClassLibraryPOSG
         public string ImputableConc { get; set; }
         public string Obs1Conc { get; set; }
         public string Obs2Conc { get; set; }
-        public string UserLogConc { get; set; }
-        public DateTime FechaLogConc { get; set; }
 
-        // Otros campos opcionales...
-
+        // Método para consultar registros
         public List<Conceptos> Consultar(string comodin, string filtro1 = null, string filtro2 = null)
         {
             var lista = new List<Conceptos>();
@@ -51,9 +45,7 @@ namespace ClassLibraryPOSG
                                     NombreConc = reader["strNombre_conc"] != DBNull.Value ? reader["strNombre_conc"].ToString() : string.Empty,
                                     ImputableConc = reader["strImputable_conc"] != DBNull.Value ? reader["strImputable_conc"].ToString() : string.Empty,
                                     Obs1Conc = reader["strObs1_conc"] != DBNull.Value ? reader["strObs1_conc"].ToString() : string.Empty,
-                                    Obs2Conc = reader["strObs2_conc"] != DBNull.Value ? reader["strObs2_conc"].ToString() : string.Empty,
-                                    UserLogConc = reader["strUserLog_conc"] != DBNull.Value ? reader["strUserLog_conc"].ToString() : string.Empty,
-                                    FechaLogConc = reader["dtFechaLog_conc"] != DBNull.Value ? Convert.ToDateTime(reader["dtFechaLog_conc"]) : DateTime.MinValue
+                                    Obs2Conc = reader["strObs2_conc"] != DBNull.Value ? reader["strObs2_conc"].ToString() : string.Empty
                                 };
                                 lista.Add(concepto);
                             }
@@ -69,6 +61,5 @@ namespace ClassLibraryPOSG
             return lista;
         }
 
-
-    }
+          }
 }

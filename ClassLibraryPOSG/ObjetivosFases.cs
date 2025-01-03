@@ -22,8 +22,6 @@ namespace ClassLibraryPOSG
         public DateTime FechaLog { get; set; }
         public int Fase { get; set; }
 
-        // ---- Métodos CRUD ----
-
         // Insertar un registro usando parámetros individuales
         public void Insertar(string idObjF, string idInfoF, string descripCorta, string descripcion, bool estado, string aprueba, DateTime fechaAprobacion, string userLog, DateTime fechaLog, int fase)
         {
